@@ -9,8 +9,12 @@
 
 const express  = require('express');
 const enrouten = require('express-enrouten');
+const exphbs   = require('express-handlebars');
+var app        = express();
 
-var app = express();
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+
 app.use(enrouten({directory: 'routes'}));
 
-app.listen(8080)
+app.listen(8080);
