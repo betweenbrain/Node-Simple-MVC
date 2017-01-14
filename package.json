@@ -1,0 +1,11 @@
+{
+  "name": "simple-mvc",
+  "version": "1.0.0",
+  "description": "A simple MVC sample app",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Matt Thomas",
+  "license": "ISC"
+}
