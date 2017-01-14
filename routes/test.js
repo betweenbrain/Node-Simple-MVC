@@ -9,6 +9,15 @@
 
 module.exports = function (app) {
     app.get('/', function (req, res) {
-        res.render('test', {foo: 'bars'});
+
+        var data = {
+            rows: [
+                {name: 'foo'},
+                {name: 'bar'},
+                {name: 'baz'}
+            ]
+        }
+
+        res.render('test', data);
     })
 }
